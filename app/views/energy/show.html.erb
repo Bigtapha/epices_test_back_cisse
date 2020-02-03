@@ -1,0 +1,23 @@
+<h1>Somme des energy</h1>
+
+<table>
+<thead>
+    <tr>identifier</tr>
+    <tr>hours</tr>
+    <tr>Energy</tr>
+</thead>
+<tbody>
+    <% @hourly_prods.each do |h_p| %>
+    <tr>
+        <td><%= h_p.identifier %></td>
+        <td><%= h_p.date_time %></td>
+        <td><%= h_p.energy %></td>
+    </tr>
+    <% end %>
+    <tr>
+        <td>Energy total journaliere</td>
+        <td><%= @day_production %></td>
+    </tr>
+</tbody>
+
+</table>
